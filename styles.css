@@ -14,7 +14,8 @@
     --box-shadow: rgba(0 0 0 / 10%); */
 
   --color-white: #fff;
-  --color-light: #f4f4f4;
+  --color-background: #f6f6f6;
+  --color-light: #e6e1ec;
   --color-dark: #525252;
   --color-black: #141415;
   --color-primary: #f24e1e;
@@ -44,7 +45,7 @@ html {
 
 body {
   color: var(--text-color);
-  background: var(--color-light);
+  background: var(--color-background);
   margin: 2rem 0 0 0;
   transition: 0.5s ease;
 }
@@ -55,6 +56,20 @@ a {
 
 li {
   list-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: var(--scroll-bar-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scroll-thumb-color);
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scroll-thumb-hover-color);
 }
 
 /* ------ header section start here ------- */
@@ -205,13 +220,13 @@ header.sticky .nav-bar {
 }
 
 .home .scroll-down {
-  color: var(--color-warning);
+  color: var(--scroll-thumb-hover-color);
   font-weight: 500;
   margin-top: 20px;
 }
 
 .home .scroll-down:hover {
-  color: var(--scroll-thumb-hover-color);
+  color: var(--color-warning);
   text-decoration: underline;
 }
 
@@ -346,3 +361,194 @@ header.sticky .nav-bar {
   color: var(--scroll-thumb-hover-color);
   font-size: var(--small-font-size);
 }
+
+/* ========== skills section =============  */
+.skills .container .content {
+  width: 100%;
+}
+
+.skills-description {
+  max-width: 700px;
+  margin-bottom: 50px;
+}
+
+.skills-description h3 {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+.skills-info {
+max-width: 100%;
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+gap: 20px;
+margin: 0 auto;
+}
+
+.skills-info h4 {
+  margin-bottom: 20px;
+}
+
+.skills-info h4 label {
+  background: var(--scroll-thumb-hover-color);
+  color: var(--color-white);
+  font-size: var(--normal-font-size);
+  font-weight: 400;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.education-all {
+  margin-bottom: 80px;
+}
+
+.edu-list .item {
+  background: var(--color-light);
+  box-shadow: var(--scroll-thumb-hover-color);
+  border-bottom: 3px solid var(--scroll-thumb-hover-color);
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 6px;
+  transition: .3s ease;
+}
+
+.edu-list .item .year {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: var(--color-primary-light);
+}
+
+.edu-list .item p {
+  color: var(--color-primary);
+  font-size: var(--small-font-size);
+}
+
+.edu-list .item p span {
+  color: var(--scroll-thumb-hover-color);
+  font-size: var(--normal-font-size);
+  font-weight: 500;
+}
+
+.bar {
+  background: var(--color-light);
+  box-shadow: var(--scroll-thumb-hover-color);
+  border-bottom: 3px solid var(--scroll-thumb-hover-color);
+  margin-bottom: 10px;
+  padding: 20px;
+  border-radius: 6px;
+  transition: .3s ease;
+}
+
+.bar .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  font-size: var(--small-font-size);
+}
+
+.bar .info span {
+  font-weight: 500;
+}
+
+.bar .line {
+  position: relative;
+  width: 100%;
+  height: 7px;
+  background: #049393;
+  border-radius: 2px;
+}
+
+.bar .line:before {
+ content: "";
+ position: absolute;
+ height: 100%;
+ top: 0;
+ left: 0;
+ background: var(--color-primary-light);
+ border-radius: 2px;
+ width: 97%;
+}
+
+.bar .html:before {
+  width: 94%;
+}
+
+.bar .css:before {
+  width: 84%;
+}
+
+.bar .javascript:before {
+  width: 78%;
+}
+
+.bar .jquery:before {
+  width: 78%;
+}
+
+.bar .react:before {
+  width: 80%;
+}
+
+.bar .node:before {
+  width: 78%;
+}
+
+.bar .mysql:before {
+  width: 95%;
+}
+
+.bar .postgresql:before {
+  width: 94%;
+}
+
+.bar .mongo:before {
+  width: 90%;
+}
+
+.bar .git:before {
+  width: 96.8%;
+}
+
+.experience-card {
+  background: var(--scroll-bar-color);
+  border-bottom: 3px solid var(--color-primary);
+  padding: 35px;
+  box-shadow: 0px 0px 2.2px 1px var(--color-warning);
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.experience-card .upper {
+  line-height: 30px;
+}
+
+.experience-card h3 {
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.experience-card h5 {
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  font-style: italic;
+}
+
+.experience-card span {
+  color: var(--color-primary);
+}
+
+.experience-card .hr {
+  width: 100%;
+  height: 2px;
+  background: var(--color-white);
+  margin: 10px 0 22px;
+}
+
+.edu-list .item:hover, .bar:hover, .experience-card:hover {
+  transform: scale(1.03);
+}
+
+
+
+
