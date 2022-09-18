@@ -598,6 +598,8 @@ header.sticky .nav-bar {
   color: var(--color-success);
   cursor: pointer;
   transition: 0.3s ease;
+
+  
 }
 
 .service-card .learn-more-btn i {
@@ -638,7 +640,7 @@ header.sticky .nav-bar {
   border-radius: 10px;
   box-shadow: 10px 10px 0px 0px rgb(221, 221, 221);
   transform: translateY(-50px);
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
 /* for js on service card start here */
@@ -648,12 +650,11 @@ header.sticky .nav-bar {
 /* for js on service card end here */
 
 .service-modal-body .modal-close-btn {
-  position: relative;
+  position: absolute;
   top: 0;
   right: 0;
-  left: 100%;
   font-size: 1.5rem;
-  /* margin: 20px; */
+  margin: 20px;
   cursor: pointer;
   color: var(--color-success);
 }
@@ -678,4 +679,237 @@ header.sticky .nav-bar {
 
 .service-modal-body ul li i {
   color: var(--scroll-thumb-hover-color);
+}
+
+.portfolio .container .content {
+  width: 100%;
+}
+
+.portfolio-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  max-width: 100%;
+  gap: 35px;
+  margin: 0 auto;
+}
+
+.portfolio-list .img-card {
+  position: relative;
+  max-width: 100%;
+  height: 360px;
+  border-radius: 10px;
+  box-shadow: 7px 7px 7px 0px var(--scroll-thumb-hover-color);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.portfolio-list .img-card .overlay {
+  transition: 1s ease;
+}
+
+.portfolio-list .img-card:hover .overlay {
+  z-index: 777;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.portfolio-list .img-card .info {
+  z-index: 777;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 20px;
+  color: var(--color-background);
+  transform: translateY(20px);
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.portfolio-list .img-card:hover .info {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.portfolio-list .img-card .info h3 {
+  font-size: 1.5em;
+}
+
+.portfolio-list .img-card .info span {
+  font-size: 1.2em;
+}
+
+.portfolio-list .img-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio-modal {
+  z-index: 999999;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s ease;
+}
+
+/* portfolio js start here  */
+.portfolio-modal.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.portfolio-modal-body {
+  position: relative;
+  background: var(--scroll-thumb-hover-color);
+  max-width: 600px;
+  margin: 20px;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 7px 7px 7px 0px #000505;
+  transform: translateY(-50px);
+  transition: .3s ease;
+}
+
+.portfolio-modal.active .portfolio-modal-body {
+  transform: translateY(0);
+}
+
+.portfolio-close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  font-size: 1.5rem;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.portfolio-close-btn:hover {
+  font-size: 1.7rem;
+  color: var(--color-success);
+}
+
+.portfolio-modal-body h3 {
+  font-size: 1.5em;
+}
+
+.portfolio-modal-body img {
+  padding: 40px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+/* ------ get in touch --------  */
+.get-in-touch {
+  margin-top: 70px;
+}
+
+.get-in-touch .container .content {
+  width: 100%;
+}
+
+.get-in-touch .contact-card {
+  position: relative;
+  width: 90%;
+  background: var(--scroll-bar-color);
+  box-shadow: 5px 5px 10px;
+  padding: 50px;
+  border-radius: 10px;
+  column-gap: 50px;
+}
+
+.contact-card .title {
+  text-transform: uppercase;
+  line-height: 60px;
+}
+
+.contact-card .title h4 {
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.contact-card .title h3 {
+  font-size: 2.2em;
+  font-weight: 400;
+}
+
+.contact-card .title h2 {
+  font-size: 3.9em;
+  font-weight: 600;
+  background: linear-gradient(to top, transparent 0%, var(--scroll-thumb-hover-color) 30%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 9;
+}
+
+/* ===== my clients =======  */
+.my-client .container {
+  flex-direction: column;
+}
+
+.my-client .container .content {
+  width: 100%;
+}
+
+.client-swiper .swiper-wrapper {
+  margin: 30px;
+}
+
+.client-swiper .swiper-slide {
+  gap: 50px;
+  margin: 20px 0;
+}
+
+.client-img {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 10%;
+}
+
+.client-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.client-details {
+  width: 500px;
+}
+
+.client-details p {
+  font-size: 1.2em;
+  color: var(--scroll-thumb-color);
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid var(--scroll-bar-color);
+}
+
+.client-details h3 {
+ color: var(--scroll-thumb-hover-color);
+  font-size: 1.5em;
+}
+
+.client-details span {
+ color: var(--color-dark);
+  font-size: 1.1em;
+}
+
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  content: '';
+  visibility: hidden;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  font-size: 2em;
 }

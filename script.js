@@ -23,6 +23,45 @@ modalCloseBtn.forEach((modalCloseBtn) => {
     modalCloseBtn.addEventListener("click", () => {
         serviceModals.forEach((modalView) => {
             modalView.classList.remove("active");
-      }) 
-   }) 
-})
+        });
+    });
+});
+
+// Portfolio section - Modal
+
+const portfolioModals = document.querySelectorAll(".portfolio-modal");
+const imgCards = document.querySelectorAll(".img-card");
+const portfolioCloseBtn = document.querySelectorAll(".portfolio-close-btn");
+
+let portfolioModal = function (modalClick) {
+  portfolioModals[modalClick].classList.add("active");
+};
+
+imgCards.forEach((imgCards, i) => {
+  imgCards.addEventListener("click", () => {
+    portfolioModal(i);
+  });
+});
+
+portfolioCloseBtn.forEach((portfolioCloseBtn) => {
+  portfolioCloseBtn.addEventListener("click", () => {
+    portfolioModals.forEach((portfolioModalView) => {
+      portfolioModalView.classList.remove("active");
+    });
+  });
+});
+
+// my clients swiper 
+var swiper = new Swiper(".client-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
