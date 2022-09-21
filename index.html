@@ -28,14 +28,24 @@
 </head>
 
 <body>
+    <!-- ==== SCROLL TO TOP BUTTON =======  -->
+    <div class="scrollToTop-btn flex-center">
+        <i class="fa fa-arrow-up"></i>
+    </div>
 
+    <!-- ====== light / dark mode button  -->
+    <div class="theme-btn flex-center">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </div>
     <!-- ====== HEADER START HERE==== -->
     <header>
         <div class="nav-bar">
             <a href="#" class="logo">Alexander</a>
             <div class="navigation">
                 <div class="nav-items">
-                    <a href="#home">Home</a>
+                    <div class="nav-close-btn"></div>
+                    <a class="active" href="#home">Home</a>
                     <a href="#about">About</a>
                     <a href="#skills">Skills</a>
                     <a href="#services">Services</a>
@@ -43,6 +53,7 @@
                     <a href="#contact">Let's Talk</a>
                 </div>
             </div>
+            <div class="nav-menu-btn"></div>
         </div>
     </header>
     <!-- ====== HEADER END HERE==== -->
@@ -68,7 +79,7 @@
         </div>
         <!-- <a href="#about" class="scroll-down">Scroll<i class="fas fa-arrow-down"></i>Down</a> -->
         <a href="#about" class="scroll-down">Scroll Down
-            <i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+            <i class="fa fa-angle-double-down"></i></a>
     </section>
     <!-- ====== HOME SECTION END HERE==== -->
 
@@ -656,8 +667,8 @@
     </section>
     <!-- ====== PORTFOLIO SECTION END HERE==== -->
 
-     <!-- ====== CONTACT SECTION START HERE==== -->
-     <section class="contact section" id="contact">
+    <!-- ====== CONTACT SECTION START HERE==== -->
+    <section class="contact section" id="contact">
         <div class="container flex-center">
             <h1 class="section-title-01">Contact Me</h1>
             <h2 class="section-title-02">Contact Me</h2>
@@ -692,47 +703,48 @@
                         <div class="third-row">
                             <textarea name="message" id="" rows="7" placeholder="massage"></textarea>
                         </div>
-                        <button class="btn" type="submit">Send Message <i class="fas fa-paper-plane" aria-hidden="true"></i></button>
+                        <button class="btn" type="submit">Send Message <i class="fas fa-paper-plane"
+                                aria-hidden="true"></i></button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
-     <!-- ====== CONTACT SECTION END HERE==== -->
+    <!-- ====== CONTACT SECTION END HERE==== -->
 
-     <!-- ====== FOOTER SECTION START HERE==== -->
-     <footer>
-     <div class="footer-container">
-        <div class="about group">
-            <h2>Alexander</h2>
-            <p>Fullstack Developer</p>
-            <a href="#about">About Me</a>
+    <!-- ====== FOOTER SECTION START HERE==== -->
+    <footer>
+        <div class="footer-container">
+            <div class="about group">
+                <h2>Alexander</h2>
+                <p>Fullstack Developer</p>
+                <a href="#about">About Me</a>
+            </div>
+            <div class="hr"></div>
+            <div class="info group">
+                <h3>More</h3>
+                <ul>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="hr"></div>
+            <div class="follow group">
+                <h3>Follow</h3>
+                <ul>
+                    <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href=""><i class="fab fa-github-square"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
         </div>
-        <div class="hr"></div>
-        <div class="info group">
-            <h3>More</h3>
-            <ul>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <div class="footer-copyright group">
+            <p><i class="fa fa-copyright"></i> 2022 by Alexander Msumba. All right reserved</p>
         </div>
-        <div class="hr"></div>
-        <div class="follow group">
-        <h3>Follow</h3>
-        <ul>
-            <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-            <li><a href=""><i class="fab fa-github-square"></i></a></li>
-            <li><a href=""><i class="fab fa-instagram"></i></a></li>
-        </ul>
-        </div>
-     </div>
-     <div class="footer-copyright group">
-        <p><i class="fa fa-copyright"></i> 2022 by Alexander Msumba. All right reserved</p>
-     </div>
-     </footer>
-     <!-- ====== FOOTER SECTION END HERE==== -->
+    </footer>
+    <!-- ====== FOOTER SECTION END HERE==== -->
 
     <!-- external scripts  -->
     <script src="/swiper-bundle.js"></script>
