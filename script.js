@@ -125,3 +125,74 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+// responsive navigation menu toggle
+const menuBtn = document.querySelector(".nav-menu-btn");
+const closeBtn = document.querySelector(".nav-close-btn");
+const navigation = document.querySelector(".navigation");
+const navItems = document.querySelectorAll(".nav-items a");
+
+menuBtn.addEventListener("click", () => {
+  navigation.classList.add("active");
+});
+
+closeBtn.addEventListener("click", () => {
+  navigation.classList.remove("active");
+});
+
+navItems.forEach((navItem) => {
+  navItem.addEventListener("click", () => {
+    navigation.classList.remove("active");
+  });
+});
+
+// Scroll reveal animation
+// common reveal options
+ScrollReveal({
+  reset: true,
+  distance: "60px",
+  duration: 2000,
+  delay: 100,
+});
+
+// target elements and options to create animations
+ScrollReveal().reveal(".home .info h2, .section-title-01, .section-title-02", {
+  delay: 500,
+  origin: "left",
+});
+ScrollReveal().reveal(".home .info h3, .home .info p, .about-info, .btn", {
+  delay: 600,
+  origin: "right",
+});
+ScrollReveal().reveal(".home .info .btn", { delay: 700, origin: "bottom" });
+ScrollReveal().reveal(".media-icons i, .contact-list li", {
+  delay: 500,
+  origin: "left",
+  interval: 200,
+});
+ScrollReveal().reveal(".about .description, .contact-right, .home-img", {
+  delay: 600,
+  origin: "top",
+  interval: 200,
+});
+ScrollReveal().reveal(
+  ".about .profession-list li, .contact-right p, .content-left h2",
+  {
+    delay: 500,
+    origin: "right",
+    interval: 200,
+  }
+);
+ScrollReveal().reveal(
+  ".about-img, .skills-description, .services-description, .contact-card, .client-swiper",
+  { delay: 700, origin: "left" }
+);
+ScrollReveal().reveal(
+  ".experience-card, .service-card, .education, .img-card",
+  { delay: 700, origin: "bottom", interval: 200 }
+);
+ScrollReveal().reveal("footer .group, .contact-form", {
+  delay: 500,
+  origin: "top",
+  interval: 200,
+});
