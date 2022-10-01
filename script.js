@@ -170,7 +170,7 @@ ScrollReveal({
 // target elements and options to create animations
 ScrollReveal().reveal(".home .info h2", {
   delay: 500,
-  origin: "left",
+  origin: "top",
 });
 ScrollReveal().reveal(".home .info h3, .home .btn", {
   delay: 600,
