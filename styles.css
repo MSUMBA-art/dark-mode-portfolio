@@ -1289,8 +1289,8 @@ footer a {
     filter: var(--color-light);
     background-size: 12px;
     background-position: center;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     top: 0;
     right: 0;
     margin: 10px;
@@ -1300,8 +1300,8 @@ footer a {
   /* Home section  */
 
   .home-container .home-img img {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     border: 2px solid var(--color-dark-green);
     transform: translateY(0, 0);
@@ -1439,8 +1439,9 @@ footer a {
   }
 
   .home-container .home-img img {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 13rem;
     transform: translate(80px, -180px);
   }
 
