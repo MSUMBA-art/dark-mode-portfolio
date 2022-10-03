@@ -161,7 +161,7 @@ readMoreBtn.addEventListener("click", () => {
 // Scroll reveal animation
 // common reveal options
 ScrollReveal({
-  // reset: true,
+   reset: true,
   distance: "60px",
   duration: 2000,
   delay: 100,
@@ -169,45 +169,45 @@ ScrollReveal({
 
 // target elements and options to create animations
 ScrollReveal().reveal(".home .info h2", {
-  delay: 500,
+  delay: 400,
   origin: "top",
 });
 ScrollReveal().reveal(".home .info h3, .home .btn", {
-  delay: 600,
+  delay: 500,
   origin: "right",
 });
 ScrollReveal().reveal(".home .info .btn", { delay: 700, origin: "bottom" });
 ScrollReveal().reveal(
   ".media-icons i, .contact-list li, .section-title-01, .skills-description h3",
   {
-    delay: 500,
+    delay: 400,
     origin: "left",
     interval: 200,
   }
 );
 ScrollReveal().reveal(".about, .contact-right, .info, .home-img", {
-  delay: 400,
+  delay: 300,
   origin: "right",
   interval: 200,
 });
 ScrollReveal().reveal(
   ".contact-right p, .section-title-02, .content-left , .skills-description p",
   {
-    delay: 500,
+    delay: 400,
     origin: "right",
     interval: 200,
   }
 );
 ScrollReveal().reveal(
   ".about-img, .services-description, .contact-card, .client-swiper",
-  { delay: 600, origin: "left" }
+  { delay: 500, origin: "left" }
 );
 ScrollReveal().reveal(
   ".experience-card, .service-card, .education",
-  { delay: 600, origin: "bottom", interval: 200 }
+  { delay: 500, origin: "bottom", interval: 200 }
 );
 ScrollReveal().reveal("footer .group, .contact-form, .img-card", {
-  delay: 500,
+  delay: 400,
   origin: "top",
   interval: 200,
 });

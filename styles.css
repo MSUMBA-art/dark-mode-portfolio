@@ -290,8 +290,8 @@ header.sticky .nav-bar {
   /* min-width: 100%;
   max-width: 340px; */
 
-  width: 350px;
-  height: 350px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   /* border-radius: 50%; */
   border: 2px solid var(--scroll-thumb-hover-color);
@@ -1303,8 +1303,8 @@ footer a {
   /* Home section  */
 
   .home-container .home-img img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     border: 2px solid var(--color-dark-green);
     transform: translateY(0, 0);
@@ -1442,11 +1442,18 @@ footer a {
   }
 
   .home-container .home-img img {
-    width: 250px;
-    height: 250px;
+    width: 160px;
+    height: 160px;
     /* margin-bottom: 11rem; */
     transform: translate(80px, -180px);
   }
+  /* .home-container .home-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid var(--color-dark-green);
+    transform: translateY(80px, -180px);
+  } */
 
   .home .home-container .info {
     font-size: 0.8rem;
