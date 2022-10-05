@@ -1071,6 +1071,7 @@ header.sticky .nav-bar {
   font-weight: 800;
   margin-bottom: 30px;
   color: var(--color-dark-green);
+  text-transform: capitalize;
 }
 
 .contact-list li {
@@ -1112,8 +1113,8 @@ header.sticky .nav-bar {
 .contact-form input,
 .contact-form textarea {
   border: none;
-  color: var(--scroll-thumb-hover-color);
-  /* background: var(--scroll-bar-color); */
+  color: rgb(23, 8, 1);
+  background: #7BA37C;
   font-size: var(--normal-font-size);
   margin-bottom: 20px;
   padding: 15px 40px 40px 20px;
@@ -1462,11 +1463,9 @@ footer a {
 
   .media-icons i {
     margin: 1.5rem;
-    background-color: black;
   }
 
   .media-icons {
-    background-color: red;
     margin-bottom: 1rem;
   }
 

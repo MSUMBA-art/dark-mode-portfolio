@@ -169,45 +169,45 @@ ScrollReveal({
 
 // target elements and options to create animations
 ScrollReveal().reveal(".home .info h2", {
-  delay: 400,
+  delay: 300,
   origin: "top",
 });
 ScrollReveal().reveal(".home .info h3, .home .btn", {
-  delay: 500,
+  delay: 400,
   origin: "right",
 });
 ScrollReveal().reveal(".home .info .btn", { delay: 600, origin: "bottom" });
 ScrollReveal().reveal(
   ".media-icons i, .contact-list li, .section-title-01, .skills-description h3",
   {
-    delay: 400,
+    delay: 300,
     origin: "left",
-    interval: 200,
+    interval: 100,
   }
 );
 ScrollReveal().reveal(".about, .contact-right, .info, .home-img", {
-  delay: 300,
+  delay: 200,
   origin: "right",
-  interval: 200,
+  interval: 100,
 });
 ScrollReveal().reveal(
   ".contact-right p, .section-title-02, .content-left , .skills-description p",
   {
-    delay: 400,
+    delay: 300,
     origin: "right",
-    interval: 200,
+    interval: 100,
   }
 );
 ScrollReveal().reveal(
   ".about-img, .services-description, .contact-card, .client-swiper",
-  { delay: 500, origin: "left" }
+  { delay: 400, origin: "left" }
 );
 ScrollReveal().reveal(
   ".experience-card, .service-card, .education",
-  { delay: 500, origin: "bottom", interval: 200 }
+  { delay: 400, origin: "bottom", interval: 200 }
 );
 ScrollReveal().reveal("footer .group, .contact-form, .img-card", {
-  delay: 400,
+  delay: 300,
   origin: "top",
-  interval: 200,
+  interval: 100,
 });
