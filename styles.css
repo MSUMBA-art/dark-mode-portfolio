@@ -1419,9 +1419,9 @@ footer a {
 /*  -------- Media queries max-width 730px  ----- */
 @media screen and (max-width: 730px) {
   /* ------- common styles for all section ------  */
-  /* body {
+  body {
     margin: 5rem 0 0 0;
-  } */
+  }
 
   .section-title-01 {
     font-size: 3em;
@@ -1461,7 +1461,13 @@ footer a {
   }
 
   .media-icons i {
-    margin-bottom: 2rem;
+    margin: 1.5rem;
+    background-color: black;
+  }
+
+  .media-icons {
+    background-color: red;
+    margin-bottom: 1rem;
   }
 
 
