@@ -1419,9 +1419,9 @@ footer a {
 /*  -------- Media queries max-width 730px  ----- */
 @media screen and (max-width: 730px) {
   /* ------- common styles for all section ------  */
-  body {
+  /* body {
     margin: 5rem 0 0 0;
-  }
+  } */
 
   .section-title-01 {
     font-size: 3em;
@@ -1439,7 +1439,7 @@ footer a {
 
   .home-container .home-img {
     position: absolute;
-    margin-top: 3rem;
+    margin-top: 1.8rem;
   }
 
   .home-container .home-img img {
