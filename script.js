@@ -161,9 +161,9 @@ readMoreBtn.addEventListener("click", () => {
 // Scroll reveal animation
 // common reveal options
 ScrollReveal({
-   reset: true,
+  //  reset: true,
   distance: "60px",
-  duration: 2000,
+  duration: 1500,
   delay: 100,
 });
 
@@ -176,7 +176,7 @@ ScrollReveal().reveal(".home .info h3, .home .btn", {
   delay: 500,
   origin: "right",
 });
-ScrollReveal().reveal(".home .info .btn", { delay: 700, origin: "bottom" });
+ScrollReveal().reveal(".home .info .btn", { delay: 600, origin: "bottom" });
 ScrollReveal().reveal(
   ".media-icons i, .contact-list li, .section-title-01, .skills-description h3",
   {
