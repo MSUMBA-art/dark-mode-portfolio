@@ -27,7 +27,7 @@
 
 .dark-theme {
   --color-white: #fff;
-  --color-background: #a4e1ff;
+  --color-background: #fcbdbd;
   --color-light: #e6e1ec;
   --color-dark: #525252;
   --color-black: #141415;
@@ -844,7 +844,7 @@ header.sticky .nav-bar {
   bottom: 0;
   left: 0;
   margin: 20px;
-  color: var(--color-background);
+  color: var(--color-light);
   transform: translateY(20px);
   opacity: 0;
   transition: 0.5s ease;
