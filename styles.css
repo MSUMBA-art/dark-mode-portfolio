@@ -4,7 +4,7 @@
 :root {
   --color-white: #fff;
   --color-dark-green: #1a3836;
-  --color-background:  #fcbdbd;
+  --color-background: #f6f6f6;
   --color-light: #e6e1ec;
   --color-dark: #525252;
   --color-black: #141415;
@@ -27,7 +27,7 @@
 
 .dark-theme {
   --color-white: #fff;
-  --color-background: #f6f6f6;
+  --color-background: #fcbdbd;
   --color-light: #e6e1ec;
   --color-dark: #525252;
   --color-black: #141415;
