@@ -360,7 +360,7 @@ header.sticky .nav-bar {
     var(--scroll-bar-color) 70%
   );
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: var(--transparent-color);
   opacity: 1;
 }
 
